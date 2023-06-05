@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+
+.navegation {
+    background-color: crimson;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 300%;
+    margin-left: 3%;
+    color: rgb(241, 230, 230);
+    -webkit-text-stroke-width: 1px;
+    /* largura da borda */
+    -webkit-text-stroke-color: #160202;
+    /* cor da borda */
+
+
+}
+
+ul {
+    color: aliceblue;
+    margin-left: 40%;
+    margin-right: 5%;
+
+}
+
+li {
+
+    border-radius: 5px;
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    padding: 10px;
+    margin-left: 8px;
+    margin-right: 10px;
+}
+
+li:hover {
+    background-color: rgb(58, 8, 8);
+    cursor: pointer;
+}
+
+/*  COMENTADA
+o tamanho da imagem está fixa, esse valor pode ser a causade não está quebrando margin left atrabalha 
+porque ele empurra e usa o espaço que não deveria existir
+img{
+    margin-left: 600px;
+    width: 500px;
+}*/
+.texto {
+    /*margin-left: 10%;  COMENTADO   esse margin left está atrabalhando a organização do conteudo*/
+    /*width: 400px; COMENTADO essa largura está atrabalhando o conteúdo de ficar ao lado */
+    color: aliceblue;
+    margin-top: 10%;
+    font-family: 'Cinzel', serif;
+    font-size: 20px;
+  
+
+}
+
+/* ADICIONEI NOVAS CONF AQUI*/
+.conteudo {
+    display: flex;
+    /* display FLEX cria elementos quebrados que vão de 1 até 12 fazendo organização */
+    padding: 2%;
+    /* paginação interna para fazer separação dos elementos*/
+}
+
+.item-1 {
+    padding: 1%;
+    /* outra paginação para descolar das beiradas */
+    flex: 1;
+    /* qtd de items que serão alinhadas, quanto maior número maior o espaço que irão ter entra a linha */
+
+}
+
+.item-2 {
+    padding: 1%;
+    /* outra paginação para descolar das beiradas */
+    flex: 1;
+    /* qtd de items que serão alinhadas, quanto maior número maior o espaço que irão ter entra a linha */
+}
+
+.imagem-comida {
+    width: 80%;
+    
+}
+.whats{
+    color: aliceblue;
+    margin-top: 27%;
+    margin-left: 92%;
+    position: fixed;
+}
+.img{
+    display: flex;
+   
+    
+}
+footer{
+    padding: 12px;
+   
+    background-color: rgb(197, 14, 50);
+    color: aliceblue    ;
+    text-align: center;
+    border-top: 1px solid black;
+    /* background-color: #0000004f; */
+}
+body{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    background: url(fundo-preto-antigo-textura-do-grunge-papel-de-parede-escuro-quadro-negro-quadro-negro-parede-da-sala_1258-28313.avif);
+}
